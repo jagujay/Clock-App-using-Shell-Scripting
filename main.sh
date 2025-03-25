@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#ALARM FUNCTION
+# ALARM FUNCTION
 set_alarm() {
         a_date=$(dialog --title "SET ALARM!" --inputbox "Enter the date for the alarm" 15 50 3>&1 1>&2 2>&3 3>&-)
 	a_month=$(dialog --title "SET ALARM!" --inputbox "Enter the month for the alarm" 15 50 3>&1 1>&2 2>&3 3>&-)
@@ -54,7 +54,7 @@ set_alarm() {
         done
 }
 
-#DIGITAL CLOCK FUNCTION
+# DIGITAL CLOCK FUNCTION
 digital_clock() {
         red=$'\e[1;31m'
         green=$'\e[1;32m'
@@ -69,7 +69,7 @@ digital_clock() {
         done
 }
 
-#TIMER FUNCTION
+# TIMER FUNCTION
 timer() {
         seconds_input=$(dialog --title "SET TIMER!" --inputbox "Timer for how many seconds?" 8 40 3>&1 1>&2 2>&3 3>&-)
         N="$seconds_input"
@@ -83,6 +83,7 @@ timer() {
         dialog --title "TIMER" --infobox "Time Up!!!" 15 50
 }
 
+# MAIN FUNCTION
 DIALOG_CANCEL=1
 DIALOG_ESC=255
 HEIGHT=0
