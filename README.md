@@ -37,4 +37,3 @@ chmod +x clock.sh
 - The alarm function ensures the user enters a valid date and time.
 - The timer counts down in real-time and notifies the user when the time is up.
 - The digital clock updates dynamically every second.
-- 
